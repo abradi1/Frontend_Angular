@@ -19,6 +19,6 @@ export class UsersService {
   }
 
   delete(id:any){
-    return this.http.delete('http://localhost:3000/api/deleteuser/'+id);
+    return this.http.delete('http://localhost:3000/api/deleteuser',id);
   }
 }

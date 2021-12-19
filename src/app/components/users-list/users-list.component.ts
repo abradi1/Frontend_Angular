@@ -18,6 +18,7 @@ export class UsersListComponent implements OnInit {
    lastname:''
  };
  users: Users[] = [];
+ condition=false;
 
   constructor(private usersService:UsersService) { }
 
@@ -48,4 +49,21 @@ deleteUser(id:any){
   })
 }
 
+  updateUser(donnee:any){
+    this.data = donnee;
+    this.condition=true;
+  }
+
+  update(){
+    this.usersService.update(this.data)
+    .subscribe( nouvelledonne => {
+      this.updateUser();
+      this.condition=false;
+    })
+  }
+
+
+
 }
+
+

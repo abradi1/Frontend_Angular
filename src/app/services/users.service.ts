@@ -6,7 +6,7 @@ import {Users} from '../models/users.model';
   providedIn: 'root'
 })
 export class UsersService {
-  urldelete = 'http://localhost:3000/api/deleteuser';
+  
 
   constructor(private http:HttpClient) { }
 
@@ -19,6 +19,6 @@ export class UsersService {
   }
 
   delete(id:any){
-    return this.http.delete(`${this.urldelete}/${id}`);
+    return this.http.delete('http://localhost:3000/api/deleteuser/'+id);
   }
 }

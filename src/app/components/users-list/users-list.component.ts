@@ -54,13 +54,7 @@ deleteUser(id:any){
     this.condition=true;
   }
 
-  update(){
-    this.usersService.update(this.data)
-    .subscribe( nouvelledonne => {
-      this.updateUser();
-      this.condition=false;
-    })
-  }
+  
 
 
 

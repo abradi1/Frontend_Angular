@@ -6,7 +6,7 @@ import { HttpHeaders } from '@angular/common/http';
   providedIn: 'root'
 })
 export class UsersService {
- apiUrl = "http://localhost:3000/api/updateuser";
+ //apiUrl = "http://localhost:3000/api/updateuser";
 
   constructor(private http:HttpClient) { }
 
@@ -22,8 +22,11 @@ export class UsersService {
     return this.http.delete('http://localhost:3000/api/deleteuser',id);
  }
 
-  update(utilisateur:any){
+  /*update(utilisateur:any){
     return this.http.put(`${this.apiUrl}/${utilisateur.id}`,utilisateur);
   
+}*/
+update(utilisateur:any){
+  return this.http.put('http://localhost:3000/api/updateuser',utilisateur);
 }
 }

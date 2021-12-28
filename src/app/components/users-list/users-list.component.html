@@ -18,6 +18,7 @@
         <button (click)="createUser()" class="btn btn-success btn-block">
             <i class="fa fa-send"></i> Nouveau utulisateur
         </button>
+        &nbsp;
         <button  class="btn btn-warning btn-block">
             <i class="fa fa-send"></i> Mettre à jour l'utilisateur
         </button>
@@ -43,8 +44,9 @@
                     <button (click)="deleteUser(user.id)" type="button" class="btn btn-danger">
                         Supprimer
                     </button>
-
+                    &nbsp;
                 </td>
+                
                 <td>
                     <button (click)="updateUser(user)" type="button" class="btn btn-warning">
                         Mise à jour

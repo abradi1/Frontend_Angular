@@ -1,39 +1,27 @@
-<router-outlet></router-outlet>
+
 <html>
+    
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        
     </head>
     <body>
 <header>
     <app-acceuil></app-acceuil>
+    
   </header>
   <div id="hero-image">
     <div class="wrapper">
-        <h2><strong>Un exemple de page d'accueil.</strong></h2>
-        <a href="#" class="button-1">Get Started</a>
+        <h2><strong>Bienvenue</strong></h2>
+        <a href="#"  routerLink="/users"class="button-1">Creer un utilisateur</a>
+        <router-outlet></router-outlet>
     </div>
 </div>
 
-<div id="features">
-    <div class="wrapper">
-        <ul>
-            <li class="feature-1">
-                <h4>Easy to Edit</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
-            </li>
-            <li class="feature-2">
-                <h4>Layered PSD</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
-            </li>
-            <li class="feature-3">
-                <h4>Ready to Go</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
-            </li>
-            <div class="clear"></div>
-        </ul>
-    </div>
-</div>
+
+
 </body>
   </html>
+ 
+
+ 

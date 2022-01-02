@@ -18,7 +18,7 @@ export class UsersService {
     return this.http.post<Users>('http://localhost:3000/api/user',data);
   }
 
-<<<<<<< HEAD
+
   delete(id:any) {
     return this.http.delete('http://localhost:3000/api/deleteuser',id);
  }
@@ -30,9 +30,6 @@ export class UsersService {
 update(utilisateur:any){
   return this.http.put('http://localhost:3000/api/updateuser',utilisateur);
 }
-=======
-  delete(id:any){
-    return this.http.delete('http://localhost:3000/api/deleteuser',id);
-  }
->>>>>>> 95810edf222ac4c9aa351681c7fb93f8cebca5fb
+
+  
 }

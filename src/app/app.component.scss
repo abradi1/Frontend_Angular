@@ -78,7 +78,8 @@ small {
 #hero-image {
     height: 580px;
     padding-top: 1px;
-    background: #e8eced url('../assets/images/pc.jpg') no-repeat center;
+    background: #e8eced url('../assets/images/background1.jpg') no-repeat center;
+    background-size: cover;
 }
 
 #hero-image h2 {
